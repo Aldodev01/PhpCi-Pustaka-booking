@@ -52,10 +52,4 @@ class Admin extends CI_Controller
         $this->load->view('admin/index', $data);
         $this->load->view('templates/footer');
     }
-
-    public function getLimitBuku()
-    {
-        $this->db->limit(5);
-        return $this->db->get('buku');
-    }
 }
